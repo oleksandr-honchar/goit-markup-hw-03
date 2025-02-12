@@ -66,6 +66,17 @@ margin-right:
   font-weight: 500;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  padding-top: 30px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 24px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-link:hover,
@@ -118,8 +129,19 @@ button:focus {
   letter-spacing: 0.04em;
 }
 
-.features {
+.features-section {
   background-color: #fff;
+}
+
+.features-list {
+  padding-left: 36px;
+  padding-right: 36px;
+  display: flex;
+  gap: 70px;
+}
+
+.features-list-item {
+  width: calc((100% - 70px * 3) / 4);
 }
 
 .features-list-title {
@@ -137,6 +159,7 @@ button:focus {
 .our-team {
   background: #f4f4fd;
 }
+
 .our-team-title {
   font-weight: 700;
   font-size: 36px;
@@ -149,6 +172,7 @@ button:focus {
 
 .our-team-list-item {
   background-color: #ffffff;
+  width: calc((100% - 70px *3) / 4);
 }
 
 .our-team-list-title {
@@ -183,6 +207,26 @@ button:focus {
 
 .portfolio-list-text {
   letter-spacing: 0.02em;
+}
+
+.our-team-list {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  column-gap: 28px;
+  row-gap: 32px;
+}
+
+.portfolio-list {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  column-gap: 28px;
+  row-gap: 32px;
+}
+
+.portfolio-list-item {
+border: 1px solid 
 }
 
 .page-footer {

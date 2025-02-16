@@ -141,10 +141,11 @@ button:focus {
 .hero {
   background-color: #2e2f42;
   text-align: center;
+  padding: 188px 0;
 }
 
 .hero-title {
-  width: 496px;
+  max-width: 496px;
   margin: 0 472px;
   font-weight: 700;
   font-size: 56px;
@@ -152,30 +153,47 @@ button:focus {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  padding: 188px 0 48px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero-btn {
+  display: block;
+  margin: 48px 479px 0 480px;
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.04em;
+  border: none;
   border-radius: 4px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   font-family: inherit;
-  margin-bottom: 188px;
 }
 
 /* features */
 
 .features-section {
   background-color: #fff;
+  padding: 120px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.features-title {
+  margin-bottom: 8px;
 }
 
 .features-list {
-  padding: 120px 0;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -202,10 +220,10 @@ button:focus {
 
 .our-team {
   background: #f4f4fd;
+  padding: 120px 0;
 }
 
 .our-team-title {
-  padding-top: 120px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -213,17 +231,13 @@ button:focus {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .our-team-list {
   display: flex;
   align-items: center;
   gap: 24px;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 32px;
-  padding-top: 72px;
-  padding-bottom: 120px;
 }
 
 .our-team-list-item {
@@ -233,7 +247,7 @@ button:focus {
 }
 
 .name-position {
-  padding: 32px 16px;
+  padding: 32px 0px;
 }
 
 .our-team-list-title {
@@ -243,7 +257,7 @@ button:focus {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .our-team-list-text {
   text-align: center;
@@ -252,6 +266,11 @@ button:focus {
 
 /* portfolio */
 
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .portfolio-title {
   font-size: 36px;
   line-height: 1.11;
@@ -259,6 +278,7 @@ button:focus {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .portfolio-list-title {
@@ -280,21 +300,22 @@ button:focus {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  padding: 120px 0;
+}
+
+.name-type {
+  padding: 32px 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+}
+
+.portfolio-list-title {
+  margin-bottom: 8px;
 }
 
 .portfolio-list-item {
   width: calc(round((100% - 24px * 2) / 3));
   height: calc(420px);
-}
-
-.name-type {
-  padding-top: 32px;
-  padding-left: 16px;
-  padding-bottom: 32px;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
 }
 
 /* footer */
@@ -305,26 +326,17 @@ button:focus {
   padding-bottom: 100px;
 }
 
-.footer-logo .logo-part {
+.footer-logo {
   display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-logo .logo-part {
   color: #f4f4fd;
 }
 
 .footer-text {
-  padding-top: 16px;
   color: #f4f4fd;
   letter-spacing: 0.02em;
   width: 264px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
 }

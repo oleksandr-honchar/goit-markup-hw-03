@@ -36,6 +36,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* common */
@@ -283,13 +285,13 @@ button:focus {
 
 .portfolio-list-item {
   width: calc(round((100% - 24px * 2) / 3));
-  height: 420px;
+  height: calc(420px);
 }
 
 .name-type {
   padding-top: 32px;
   padding-left: 16px;
-  padding-bottom: 31px;
+  padding-bottom: 32px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;

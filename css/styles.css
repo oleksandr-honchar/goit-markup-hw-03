@@ -190,10 +190,6 @@ button:focus {
   border: 0;
 }
 
-.features-title {
-  margin-bottom: 8px;
-}
-
 .features-list {
   display: flex;
   align-items: center;
